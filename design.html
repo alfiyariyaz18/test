@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlfiyaRiyaz</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style-box.css"> -->
+    <script src="https://kit.fontawesome.com/3c96f9c941.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    /* font-family: poppins; */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+    /* min-height: 100vh;
+    color:#fff; */
+}
+
+/* .container-box{
+    margin-top: 50px; 
+    width: 250px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+} */
+
+.card-box{
+    position: relative;
+    left: -6%;
+    width: 300px;
+    height: 330px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgb(0, 0, 0, 0.7);
+}
+
+.card-box .imgbox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    /* display: block; */
+    transition: 0.5s;
+}
+
+.card-box .content-box{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    background: #084670;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-box:hover .content-box{
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
+}
+
+.content-box p{
+    margin: 10px 0 0;
+    padding: 1em 1em;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    opacity: 0;
+}
+
+.card-box:hover .content-box p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* h2{
+    text-align: center;
+} */
+
+.card-box:hover{
+    box-shadow: 0 0 5em rgb(0, 0, 0, 0.4);
+}
+</style>
+
+<body>
+    <article class="container-fluid mt-5 mb-5">
+        <section class="row justify-content-evenly">
+            <div class="col-lg-3">
+                <div class="container-box">
+                    <div class="card-box">
+                        <div class="imgbox">
+                            <img src="../Media/background-top.png" alt="">
+                        </div>
+                        <div class="content-box">
+                            <h2>Tajmahal</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Mollitia illum obcaecati totam incidunt molestias sit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="container-box">
+                    <div class="card-box">
+                        <div class="imgbox">
+                            <img src="../Media/background-top.png" alt="">
+                        </div>
+                        <div class="content-box">
+                            <h2>Tajmahal</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Mollitia illum obcaecati totam incidunt molestias sit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="container-box">
+                    <div class="card-box">
+                        <div class="imgbox">
+                            <img src="../Media/background-top.png" alt="">
+                        </div>
+                        <div class="content-box">
+                            <h2>Tajmahal</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Mollitia illum obcaecati totam incidunt molestias sit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>
